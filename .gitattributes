@@ -1,0 +1,14 @@
+*.dylib filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.burst@1.8.12/.Runtime/hostmac/dsymutil filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.burst@1.8.12/.Runtime/libburst-llvm-16.so filter=lfs diff=lfs merge=lfs -text
+Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.burst@1.8.12/.Runtime/hostwin/dsymutil.exe filter=lfs diff=lfs merge=lfs -text
+Library/Bee/200b0aE.dag filter=lfs diff=lfs merge=lfs -text
+Library/BurstCache/JIT/Hashes/1352b19bc91ac7d0697183b5fea907c0.bhc filter=lfs diff=lfs merge=lfs -text
+Library/Bee/200b0aE.dag.json filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.burst@1.8.12/.Runtime/hostlin/dsymutil filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.burst@1.8.12/.Runtime/hostmac/llvm-lipo filter=lfs diff=lfs merge=lfs -text
+Library/BurstCache/JIT/Hashes/75745a22b2b24b4888098c63010cba71.bhc filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.2d.animation@9.1.0/Samples~/AnimationSamples/Extras/Attachment[[:space:]]Points/Sprites/Fei.psb filter=lfs diff=lfs merge=lfs -text

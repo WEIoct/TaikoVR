@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{FA028412-623D-477E-D9F3-B921B4FC7E97}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Lane.cs">
+    <Files>
+      <File FileName="Assets/Scripts/SongManager.cs" Line="31" Column="1" />
+      <File FileName="Assets/Scripts/Note.cs" />
+      <File FileName="Assets/Scripts/Lane.cs" Line="77" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RhythmGameTutorialProject" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Lane.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6826507b-4137-478f-9983-575c4c70335b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

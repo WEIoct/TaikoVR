@@ -48,24 +48,34 @@ public class Lane : MonoBehaviour
         if (inputIndex < timeStamps.Count)
         {
             double timeStamp = timeStamps[inputIndex];
-            double marginOfError = SongManager.Instance.marginOfError;
+            double ExcellentMargin = SongManager.Instance.ExcellentMargin;
+            double MissMargin = SongManager.Instance.MissMargin;
             double audioTime = SongManager.GetAudioSourceTime() - (SongManager.Instance.inputDelayInMilliseconds / 1000.0);
 
             if (Input.GetKeyDown(input))
             {
-                if (Math.Abs(audioTime - timeStamp) < marginOfError)
+                if (Math.Abs(audioTime - timeStamp) < ExcellentMargin)
                 {
                     Hit();
-                    print($"Hit on {inputIndex} note");
-                    Destroy(notes[inputIndex].gameObject);
+                    print($"Hit on {inputIndex} note, Excellent!");
+                    notes[inputIndex].FlyAway(); // trigger fly-away effect
                     inputIndex++;
                 }
+
+                else if (Math.Abs(audioTime - timeStamp) < MissMargin)
+                {
+                    Hit();
+                    print($"Hit on {inputIndex} note, Good!");
+                    notes[inputIndex].FlyAway(); // trigger fly-away effect
+                    inputIndex++;
+                }
+
                 else
                 {
-                    print($"Hit inaccurate on {inputIndex} note with {Math.Abs(audioTime - timeStamp)} delay");
+                    print($"Miss on {inputIndex} note with {Math.Abs(audioTime - timeStamp)} delay");
                 }
             }
-            if (timeStamp + marginOfError <= audioTime)
+            if (timeStamp + MissMargin <= audioTime)
             {
                 Miss();
                 print($"Missed {inputIndex} note");

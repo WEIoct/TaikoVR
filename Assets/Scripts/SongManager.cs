@@ -6,6 +6,7 @@ using Melanchall.DryWetMidi.Interaction;
 using System.IO;
 using UnityEngine.Networking;
 using System;
+using UnityEngine.Serialization;
 
 public class SongManager : MonoBehaviour
 {
@@ -13,20 +14,26 @@ public class SongManager : MonoBehaviour
     public AudioSource audioSource;
     public Lane[] lanes;
     public float songDelayInSeconds;
-    public double marginOfError; // in seconds
+    public double ExcellentMargin; // in seconds
+    public double MissMargin; // in seconds
 
     public int inputDelayInMilliseconds;
     
 
     public string fileLocation;
     public float noteTime;
-    public float noteSpawnY;
-    public float noteTapY;
-    public float noteDespawnY
+
+    [FormerlySerializedAs("noteSpawnY")]
+    public float noteSpawnX;
+
+    [FormerlySerializedAs("noteTapY")]
+    public float noteTapX;
+    
+    public float noteDespawnX
     {
         get
         {
-            return noteTapY - (noteSpawnY - noteTapY);
+            return noteTapX - (noteSpawnX - noteTapX);
         }
     }
 
